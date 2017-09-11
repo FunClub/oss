@@ -1,0 +1,24 @@
+#mybatis.xml配置
+mybatis:
+  mapper-locations: mapper/*.xml
+
+#mongodb配置
+spring:
+  data:
+    mongodb:
+      database: red-fruit
+      #rest资源的基本路径
+    rest:
+      base-path: /api
+  #jdbc数据源配置
+
+  datasource:
+    username: root
+    password: root
+    type: com.mchange.v2.c3p0.ComboPooledDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/red-fruit?serverTimezone=UTC&useSSL=true
+  #ehcache缓存配置文件
+  cache:
+    ehcache:
+      config: ehcache.xml

@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: dao,service,log
+  http:
+    multipart:
+      max-file-size: 1000MB
+server:
+  session:
+    timeout: -1
+  port: 80
